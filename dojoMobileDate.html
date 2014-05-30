@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+html {
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+	
+	font-size: x-large;
+}
+
+/* .day { */
+/* 	border-radius: 10px 0px 0px 10px; */
+/* 	-webkit-border-radius: 10px 0px 0px 10px; */
+/* } */
+
+/* .year { */
+/* 	border-radius: 0px 10px 10px 0px; */
+/* 	-webkit-border-radius: 0px 10px 10px 0px; */
+/* } */
+
+.add,.sub {
+	display: block;
+	height: 20%;
+	margin: 0 auto;
+	padding: 10px;
+	/* 	border: 1px solid black; */
+	/* 	width: 20px;; */
+	/* 	overflow: hidden; */
+/* 	font-size: 14px; */
+	background: #99CCFF;
+	text-align: center;
+	cursor: pointer;
+}
+
+#day,#month,#year {
+	height: 30%;
+	width: 100%;
+	border: 1px solid black;
+	text-align: center;
+/* 	padding-top: 20px; */
+/* 	font-size: 14px; */
+	/* 	overflow: hidden; */
+}
+
+.date {
+	display: inline-block;
+	border: 2px solid black;
+	margin: 0px;
+	width: 30%;
+	float: left;
+}
+
+.month {
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.controllers,.labels,.buttons {
+	display: block;
+	margin: 20px;
+	overflow: auto;
+	
+}
+button {
+height: 10%;
+width: 30%;
+
+}
+
+.labels > label {
+	display: inline-block;
+/* 	border: 2px solid black; */
+	margin: 0px;
+	width: 30%;
+	text-align: center;
+/* 	float: left; */
+	
+}
+</style>
+<script src="date.js"></script>
+<script src="http://arshaw.com/xdate/downloads/0.8/xdate.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="labels">
+			<label>Day</label> 
+			<label>Month</label>
+			<label>Year</label>
+
+		</div>
+
+		<div class="controllers">
+			<div class="date day">
+				<div class="add" id="addDay">+</div>
+				<div id="day"></div>
+				<div class="sub" id="subDay">-</div>
+			</div>
+			<div class="date month">
+				<div class="add" id="addMonth">+</div>
+				<div id="month"></div>
+				<div class="sub" id="subMonth">-</div>
+			</div>
+			<div class="date year">
+				<div class="add" id="addYear">+</div>
+				<div id="year"></div>
+				<div class="sub" id="subYear">-</div>
+			</div>
+		</div>
+
+		<div class="buttons">
+			<button id="ok">OK</button>
+			<button id="cancel">Cancel</button>
+		</div>
+		<div id="chosenDate">
+	</div>
+	</div>
+	
+	
+</body>
+</html>
