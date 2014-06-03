@@ -1,0 +1,79 @@
+html {
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+	
+	font-size: x-large;
+}
+
+/* .day { */
+/* 	border-radius: 10px 0px 0px 10px; */
+/* 	-webkit-border-radius: 10px 0px 0px 10px; */
+/* } */
+
+/* .year { */
+/* 	border-radius: 0px 10px 10px 0px; */
+/* 	-webkit-border-radius: 0px 10px 10px 0px; */
+/* } */
+
+.add,.sub {
+	display: block;
+	height: 20%;
+	margin: 0 auto;
+	padding: 10px;
+	/* 	border: 1px solid black; */
+	/* 	width: 20px;; */
+	/* 	overflow: hidden; */
+/* 	font-size: 14px; */
+	background: #99CCFF;
+	text-align: center;
+	cursor: pointer;
+}
+
+.values {
+	height: 30%;
+	width: 100%;
+	/*border: 1px solid black;*/
+	text-align: center;
+/* 	padding-top: 20px; */
+/* 	font-size: 14px; */
+	/* 	overflow: hidden; */
+}
+
+.date {
+	display: inline-block;
+	border: 2px solid black;
+	margin: 0px;
+	width: 30%;
+	float: left;
+}
+
+.month {
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.controllers,.labels,.buttons {
+	display: block;
+	margin: 20px;
+	overflow: auto;
+	
+}
+button {
+height: 10%;
+width: 30%;
+
+}
+
+.labels > label {
+	display: inline-block;
+/* 	border: 2px solid black; */
+	margin: 0px;
+	width: 30%;
+	text-align: center;
+/* 	float: left; */
+	
+}

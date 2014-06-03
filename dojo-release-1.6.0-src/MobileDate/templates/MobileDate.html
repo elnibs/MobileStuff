@@ -1,0 +1,30 @@
+<div class="container">
+	<div class="labels">
+		<label>Day</label> <label>Month</label> <label>Year</label>
+
+	</div>
+
+	<div class="controllers">
+		<div class="date day">
+			<div class="add" data-dojo-attach-point="addDay">+</div>
+			<div data-dojo-attach-point="day" class="values"></div>
+			<div class="sub" data-dojo-attach-point="subDay">-</div>
+		</div>
+		<div class="date month">
+			<div class="add" data-dojo-attach-point="addMonth">+</div>
+			<div data-dojo-attach-point="month" class="values"></div>
+			<div class="sub" data-dojo-attach-point="subMonth">-</div>
+		</div>
+		<div class="date year">
+			<div class="add" data-dojo-attach-point="addYear">+</div>
+			<div data-dojo-attach-point="year" class="values"></div>
+			<div class="sub" data-dojo-attach-point="subYear">-</div>
+		</div>
+	</div>
+
+	<div class="buttons">
+		<button data-dojo-attach-point="ok">OK</button>
+		<button data-dojo-attach-point="cancel">Cancel</button>
+	</div>
+	<div data-dojo-attach-point="chosenDate"></div>
+</div>
