@@ -87,8 +87,6 @@ dojo.declare("MobileDate", [dijit._Widget, dijit._Templated], {
 							"d": this.d
 						};
 					
-	
-		
 		//attach events
 		//day
 		dojo.connect(this.addDay, "onclick", dojo.partial(this.methods.addDay, day));
@@ -102,11 +100,10 @@ dojo.declare("MobileDate", [dijit._Widget, dijit._Templated], {
 		dojo.connect(this.addYear,"onclick", dojo.partial(this.methods.addYear, year));
 		dojo.connect(this.subYear,"onclick", dojo.partial(this.methods.subYear, year));
 		
-		//ok button
-		
 		if(!myContext)
 			myContext = this;
 		
+		//ok button
 		dojo.connect(this.ok, "onclick", dojo.partial(function(){
 			
 			var ctxt = arguments[0];
@@ -119,9 +116,9 @@ dojo.declare("MobileDate", [dijit._Widget, dijit._Templated], {
 		
 		
 		//cancel
-		dojo.connect(this.cancel, "onclick", function(){
-			this._currentDate();
-		});
+		dojo.connect(this.cancel, "onclick", dojo.partial(function(){
+			arguments[0]._currentDate();
+		}, myContext));
 		
 	}
 	
